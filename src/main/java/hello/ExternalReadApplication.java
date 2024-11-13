@@ -2,6 +2,7 @@ package hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Import;
 
 import hello.config.MyDataSourceEnvConfig;
@@ -13,6 +14,7 @@ import hello.datasource.MyDataSourceConfigV1;
 // @Import(MyDataSourceValueConfig.class)
 @Import(MyDataSourceConfigV1.class)
 @SpringBootApplication(scanBasePackages = "hello.datasource")
+@ConfigurationPropertiesScan({"hello"})
 public class ExternalReadApplication {
 
     public static void main(String[] args) {

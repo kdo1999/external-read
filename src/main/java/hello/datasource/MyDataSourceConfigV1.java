@@ -7,7 +7,7 @@ import hello.config.MyDataSourcePropertiesV1;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@EnableConfigurationProperties(MyDataSourcePropertiesV1.class)
+// @EnableConfigurationProperties(MyDataSourcePropertiesV1.class)
 public class MyDataSourceConfigV1 {
 	private final MyDataSourcePropertiesV1 properties;
 
